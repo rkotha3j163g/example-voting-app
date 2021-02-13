@@ -25,7 +25,8 @@ services:
       placement:
         constraints: [node.role == manager]
   vote:
-    image: sreeharshav/example-voting-app_vote:latest
+    #image: sreeharshav/example-voting-app_vote:latest
+    image: sreeharshav/rollingupdate:v5
     ports:
       - 5000:80
     networks:
